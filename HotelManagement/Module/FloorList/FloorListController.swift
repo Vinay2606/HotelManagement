@@ -33,6 +33,11 @@ class FloorListViewController: UIViewController {
         viewModel.loadFloors()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     @IBAction func goToAddFloor() {
         let storyBoard : UIStoryboard = UIStoryboard(name: cStoryboard, bundle:nil)
         let floorViewController = storyBoard.instantiateViewController(withIdentifier: identifierFloor) as! AddFloorViewController
