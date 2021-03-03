@@ -1,0 +1,6 @@
+framework module Pods_HotelManagement {
+  umbrella header "Pods-HotelManagement-umbrella.h"
+
+  export *
+  module * { export * }
+}
