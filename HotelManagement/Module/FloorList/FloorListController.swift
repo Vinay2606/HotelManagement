@@ -43,6 +43,7 @@ class FloorListViewController: UIViewController {
     @IBAction func goToAddRoom() {
         let storyBoard : UIStoryboard = UIStoryboard(name: cStoryboard, bundle:nil)
         let roomViewController = storyBoard.instantiateViewController(withIdentifier: identifierRoom) as! AddRoomViewController
+        roomViewController.delegate = self
         self.present(roomViewController, animated: true, completion: nil)
     }
 
@@ -65,7 +66,7 @@ extension FloorListViewController: UITableViewDataSource, UITableViewDelegate {
         let roomListViewController = storyBoard.instantiateViewController(withIdentifier: identifierRoomlist) as! RoomListViewController
         roomListViewController.delegate = self
         roomListViewController.viewModel = RoomListViewModel(rooms: viewModel.getFloorRooms(index: indexPath.row))
-        self.present(roomListViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(roomListViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -73,7 +74,7 @@ extension FloorListViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension FloorListViewController: AddFloorViewDelegate, RoomListViewDelegate {
+extension FloorListViewController: AddFloorViewDelegate, RoomListViewDelegate, AddRoomViewDelegate {
     func refreshFloorList() {
         viewModel.loadFloors()
     }

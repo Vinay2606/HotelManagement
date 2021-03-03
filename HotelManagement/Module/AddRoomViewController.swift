@@ -12,11 +12,17 @@ struct PicketCellViewModel {
 import Foundation
 import UIKit
 
+protocol AddRoomViewDelegate: NSObject {
+    func refreshFloorList()
+}
+
 class AddRoomViewController: UIViewController {
     
     @IBOutlet var textName: UITextField!
     @IBOutlet var textFloor: UITextField!
     @IBOutlet var textType: UITextField!
+    
+    weak var delegate: AddRoomViewDelegate?
     
     var picker: UIPickerView?
     var pickerAccessory: UIToolbar?
@@ -33,6 +39,7 @@ class AddRoomViewController: UIViewController {
     
     @IBAction func goBack() {
         self.dismiss(animated: true, completion: {
+            self.delegate?.refreshFloorList()
         })
     }
     

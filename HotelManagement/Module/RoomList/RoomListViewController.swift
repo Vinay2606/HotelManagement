@@ -24,13 +24,16 @@ class RoomListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     @IBAction func goBack() {
-        self.dismiss(animated: true, completion: {
-            self.delegate?.refreshFloorList()
-        })
+        self.delegate?.refreshFloorList()
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
