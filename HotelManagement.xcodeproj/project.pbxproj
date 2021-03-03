@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		646D79E325ED4FB0008B5263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646D79E125ED4FB0008B5263 /* LaunchScreen.storyboard */; };
 		646D79EE25ED4FB1008B5263 /* HotelManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D79ED25ED4FB1008B5263 /* HotelManagementTests.swift */; };
 		646D79F925ED4FB1008B5263 /* HotelManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D79F825ED4FB1008B5263 /* HotelManagementUITests.swift */; };
+		646F0A6B25EF2DB3008E49D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 646F0A6A25EF2DAB008E49D8 /* README.md */; };
+		646F0A7025EF2F52008E49D8 /* ClassDiagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 646F0A6F25EF2F52008E49D8 /* ClassDiagram.png */; };
 		64CBF2F425EDD4860014C0D1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CBF2ED25EDD4850014C0D1 /* CoreDataStack.swift */; };
 		64CBF2F625EDD4860014C0D1 /* CDFloor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CBF2F025EDD4850014C0D1 /* CDFloor+CoreDataClass.swift */; };
 		64CBF2F725EDD4860014C0D1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64CBF2F125EDD4850014C0D1 /* DataModel.xcdatamodeld */; };
@@ -70,6 +72,8 @@
 		646D79F425ED4FB1008B5263 /* HotelManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotelManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		646D79F825ED4FB1008B5263 /* HotelManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelManagementUITests.swift; sourceTree = "<group>"; };
 		646D79FA25ED4FB1008B5263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646F0A6A25EF2DAB008E49D8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		646F0A6F25EF2F52008E49D8 /* ClassDiagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClassDiagram.png; sourceTree = "<group>"; };
 		64CBF2ED25EDD4850014C0D1 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		64CBF2F025EDD4850014C0D1 /* CDFloor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDFloor+CoreDataClass.swift"; sourceTree = "<group>"; };
 		64CBF2F225EDD4850014C0D1 /* SHDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SHDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 		646D79CA25ED4FA4008B5263 = {
 			isa = PBXGroup;
 			children = (
+				646F0A6A25EF2DAB008E49D8 /* README.md */,
+				646F0A6F25EF2F52008E49D8 /* ClassDiagram.png */,
 				646D79D525ED4FA4008B5263 /* HotelManagement */,
 				646D79EC25ED4FB1008B5263 /* HotelManagementTests */,
 				646D79F725ED4FB1008B5263 /* HotelManagementUITests */,
@@ -269,7 +275,6 @@
 				7945672ED48571E40AAB6B0E /* Pods-HotelManagementUITests.debug.xcconfig */,
 				85F3A2DD0613C9EBE0C797C7 /* Pods-HotelManagementUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -382,8 +387,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646F0A7025EF2F52008E49D8 /* ClassDiagram.png in Resources */,
 				646D79E325ED4FB0008B5263 /* LaunchScreen.storyboard in Resources */,
 				646D79E025ED4FB0008B5263 /* Assets.xcassets in Resources */,
+				646F0A6B25EF2DB3008E49D8 /* README.md in Resources */,
 				646D79DE25ED4FA4008B5263 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
